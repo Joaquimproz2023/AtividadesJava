@@ -1,0 +1,120 @@
+import java.util.Scanner;
+
+public class Aprovacao {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a nota: ");
+        int nota = scanner.nextInt();
+        if (nota >= 60) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+        scanner.close();
+    }
+}
+
+
+---------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class Nota {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a nota: ");
+        int Nota = scanner.nextInt();
+        if (Nota >0 & Nota >100) {
+            System.out.println("Nota invalida!");
+        }
+        else if (Nota >= 60) {
+            System.out.println("Aprovado");
+        }
+        else {
+            System.out.println("Reprovado");
+        }
+        scanner.close();
+    }
+}
+
+---------------------------------------------------
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+        if (numero % 2 == 0) {
+            System.out.println("O número " + numero + " é par.");
+        } else {
+            System.out.println("O número " + numero + " é ímpar.");
+        }
+        scanner.close();
+    }
+}
+
+-----------------------------------------
+
+import java.util.Scanner;
+
+public class Atividade17 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        if (numero % 10 == 0) {
+            int metade = numero / 2;
+            System.out.println("A metade do número é: " + metade);
+        } else {
+            System.out.println("O número digitado não termina com 0");
+        }
+
+        scanner.close();
+    }
+}
+--------------------------------------------
+import java.util.Scanner;
+
+public class Atividade18 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        double numero = scanner.nextDouble();
+
+        if (numero > 0) {
+            System.out.println("O número é positivo.");
+        } else if (numero < 0) {
+            System.out.println("O número é negativo.");
+        } else {
+            System.out.println("O número é neutro (zero).");
+        }
+
+        scanner.close();
+    }
+}
+
+-----------------------------------------------
+
+import java.util.Scanner;
+
+public class Atividade19 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o salário atual do funcionário: ");
+        double salarioAtual = scanner.nextDouble();
+        System.out.print("Digite o tempo de serviço do funcionário (em anos): ");
+        int tempoServico = scanner.nextInt();
+        double salarioReajustado;
+        if (tempoServico <= 1) {
+            salarioReajustado = salarioAtual * 1.10;
+        } else {
+            salarioReajustado = salarioAtual * 1.20;
+        }
+        System.out.println("O salário reajustado é: " + salarioReajustado);
+        scanner.close();
+    }
+}
